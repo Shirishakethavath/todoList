@@ -1,0 +1,63 @@
+.container-fluid{
+  height:100vh;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .main-container{
+  width:40vw;
+  height:auto;
+  background-color: black;
+  border-radius: 4px;
+}
+.bg-banner{
+  background-image: url("./assets/images/bgcolor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-blend-mode: overlay;
+}
+.todo-title{
+  font-size: 2rem;
+  font-weight: 800;
+  animation: underline 5s ease-in infinite;
+  color: #fff;
+}
+.quote_text{
+  font-size: 1rem;
+  font-weight: 500;
+  color:#fff;
+  letter-spacing: 0.7px;
+  margin:10px 0 0;
+}
+.quote_author{
+  color: #fff;
+  float: right;
+  font-size: .8rem;
+  color:#74abfe;
+}
+
+@keyframes underline {
+  0%   {text-decoration:4px underline #448cf8; left:0px; top:0px;}
+  25%  {text-decoration:4px underline #448cf8; left:200px; top:0px;}
+}
+@media screen and (max-width:1250px) {
+  .main-container{
+    width:45vw;
+    height:auto;
+  }
+}
+@media screen and (max-width:778px) {
+  .main-container{
+    width:80vw;
+    height:auto;
+  }
+}
+@media screen and (max-width:576px) {
+  .main-container{
+    width:100vw;
+    height:auto;
+  }
+}
+
